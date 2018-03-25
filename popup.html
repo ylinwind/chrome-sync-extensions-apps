@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Getting Started Extension's Popup</title>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+  </head>
+  <body> 
+    <div class="row" style="background-color:#eee;margin:0px;height:630px;overflow-y:auto;">
+      <div id="canvasdiv" style="width:800px;height:550px;background-color:#fff;margin:15px;border-color: #ddd;border-width: 1px;border-radius: 4px;">
+        <canvas id="canvas_hide"  class="hide" width="800" height="550"></canvas>
+        <canvas id="canvas1" width="800" height="550"></canvas>
+        <canvas id="canvas_last" class="hide"></canvas>
+      </div>
+      <div>
+        <button class="btn btn-danger" id="close" style="width:80px;margin-left: 15px;">关闭</button>
+        <button class="btn btn-info" id="clear" style="width:80px;margin-left: 10px;">清除</button>
+        <button class="btn btn-primary" id="save" style="width:80px;margin-left: 10px;">保存</button>
+      </div>
+    </div>
+    <script src="js/sync-sdk/obex-ftp-utils.js"></script>
+    <script src="js/sync-sdk/obex-ftp-response.js"></script>
+    <script src="js/sync-sdk/obex-ftp-header.js"></script>
+    <script src="js/sync-sdk/obex-ftp-request.js"></script>
+    <script src="js/sync-sdk/sync-capture-report.js"></script>
+    <script src="js/sync-sdk/sync-path.js"></script>
+    <script src="js/sync-sdk/sync-filter.js"></script>
+    <script src="js/sync-sdk/sync-streaming.js"></script>
+    <script src="js/sync-sdk/sync-file-transfer.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="popup.js"></script>
+    <script src="js/sockjs-0.3.4.js"></script>
+    <script src="js/stomp.js"></script>
+  </body>
+</html>
+

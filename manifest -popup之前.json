@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "OA手写板插件v1.0",
+  "description": "shou This extension let OASystem html use googie board sync9.7",
+  "version": "1.0",
+  "update_url": "http://*/navigator/app-updates.xml",
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  },
+  "permissions": [
+   "notifications",
+    "http://www.baidu.com/*",
+    "contextMenus",
+    "alwaysOnTopWindows",
+    "hid",
+    {
+      "usbDevices": [ { "vendorId": 10516, "productId": 256 }, { "vendorId": 243, "productId": 256 } ]
+    }
+  ],
+  "url_handlers": {
+    "view_test_page": {
+      "matches": [
+        "http://*/*"
+      ],
+      "title": "View Test Page"
+    }
+  }
+}
