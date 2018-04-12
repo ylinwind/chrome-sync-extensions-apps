@@ -7,5 +7,5 @@
 # 6.premission
 
 ```
-test
+code pre
 ```
